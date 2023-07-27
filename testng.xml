@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Amin_stors/IdeaProjects/MagentoProject">
+        <classes>
+            <class name="magentaHelperUi.pages.CreateAccountPage">
+                <methods>
+                    <include name="fillUpTheCreateCustomerPage"/>
+                </methods>
+            </class>
+            <class name="baseTestConfig.pageTests.CreateAccountPageTest">
+                <methods>
+                    <include name="testWithRegisteredCredits"/>
+                    <include name="testLoginWithInvalidEmail"/>
+                    <include name="testLoginWithInvalidPassword"/>
+                </methods>
+            </class>
+            <class name="baseTestConfig.pageTests.LoginPageTest">
+                <methods>
+                    <include name="testWithValidCredits"/>
+                    <include name="testWithInvalidEmail"/>
+                    <include name="testWithInvalidPassword"/>
+                    <include name="testForgotPasswordBtn"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
