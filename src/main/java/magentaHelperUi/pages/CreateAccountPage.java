@@ -5,7 +5,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
+import java.util.LinkedList;
+import java.util.List;
+
+
 public class CreateAccountPage extends BasePage {
+
+    List<WebElement> webElementList;
+
+
+    public void addToList(){
+        webElementList = List.of(firstName,lastName);
+    }
 
 
     @FindBy(id = "firstname")

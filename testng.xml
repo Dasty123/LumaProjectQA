@@ -8,19 +8,34 @@
                     <include name="fillUpTheCreateCustomerPage"/>
                 </methods>
             </class>
-            <class name="baseTestConfig.pageTests.CreateAccountPageTest">
+            <class name="pageTests.CreateAccountPageTest">
                 <methods>
                     <include name="testWithRegisteredCredits"/>
                     <include name="testLoginWithInvalidEmail"/>
                     <include name="testLoginWithInvalidPassword"/>
                 </methods>
             </class>
-            <class name="baseTestConfig.pageTests.LoginPageTest">
+            <class name="pageTests.LoginPageTest">
                 <methods>
                     <include name="testWithValidCredits"/>
                     <include name="testWithInvalidEmail"/>
                     <include name="testWithInvalidPassword"/>
                     <include name="testForgotPasswordBtn"/>
+                </methods>
+            </class>
+            <class name="pageTests.MyAccountPageTest">
+                <methods>
+                    <include name="testContactInformation"/>
+                    <include name="testEditedInfo"/>
+                    <include name="testEditedAddress"/>
+                    <include name="testChangePasswordWithWrongCurrent"/>
+                    <include name="testChangePasswordWithSamePassword"/>
+                    <include name="testChangePasswordSuccess"/>
+                </methods>
+            </class>
+            <class name="pageTests.OrderTest">
+                <methods>
+                    <include name="test123"/>
                 </methods>
             </class>
         </classes>
