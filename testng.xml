@@ -8,11 +8,25 @@
                     <include name="fillUpTheCreateCustomerPage"/>
                 </methods>
             </class>
+            <class name="api.RegressTest">
+                <methods>
+                    <include name="checkAvatarAndIdTest"/>
+                    <include name="successRegister"/>
+                    <include name="unSuccessTest"/>
+                    <include name="sortedYearsTest"/>
+                    <include name="delete"/>
+                </methods>
+            </class>
             <class name="pageTests.CreateAccountPageTest">
                 <methods>
                     <include name="testWithRegisteredCredits"/>
                     <include name="testLoginWithInvalidEmail"/>
                     <include name="testLoginWithInvalidPassword"/>
+                </methods>
+            </class>
+            <class name="pageTests.DemoTest">
+                <methods>
+                    <include name="test"/>
                 </methods>
             </class>
             <class name="pageTests.LoginPageTest">
